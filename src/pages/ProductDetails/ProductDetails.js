@@ -8,42 +8,9 @@ class ProductDetails extends Component {
      this.productData = this.props.product
       this.state={
           Imgsrc : this.productData.gallery[0],
-        //   swatchID : "",
-        //   attrName: [],
-        //   dispValue: []
+        
       }  
     }
- // active swatch function for swatch attr
-   activeSwatch = (id) =>{
-    this.setState({swatchID : id})
-   }
-//    // active text function for text attr
-//    activeText = (e , newattrName) =>{
-//        let displayValue = e.target.innerText;
-//        if(this.state.attrName.indexOf(newattrName)> -1){
-//         console.log("yes there ara")
-//             let ind = this.state.attrName.indexOf(newattrName);
-//             let values= [...this.state.dispValue];
-//             values[ind] = displayValue;
-//             this.setState({dispValue : values})
-           
-       
-//     }
-//        else {
-//         console.log("new attr"+ newattrName)
-//         // let tempattr = [...this.state.attrName];
-//         // tempattr.push(newattrName);
-//         // let tempValues = [...this.state.textID];
-//         // tempId.push(id);
-//         this.setState(({
-//             attrName: [...this.state.attrName , newattrName],
-//             dispValue:   [...this.state.dispValue , displayValue]
-//         }))
-       
-//        }
-     
-    
-//     }
     // chang main img 
     changeSrc = (e)=>{
         e.preventDefault();
